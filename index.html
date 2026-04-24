@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Crypto Market</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>💰 Crypto Market</h2>
+  <p>Achat USDT via MonCash ou NatCash</p>
+
+  <form id="form">
+
+    <label>Service :</label>
+    <select id="service">
+      <option value="USDT">Achat USDT</option>
+      <option value="MonCash">Dépôt MonCash</option>
+      <option value="NatCash">Dépôt NatCash</option>
+    </select>
+
+    <input type="text" id="nom" placeholder="Nom complet" required>
+
+    <input type="number" id="montant" placeholder="Montant (HTG)" required>
+
+    <input type="text" id="numero" placeholder="Numéro MonCash / NatCash" required>
+
+    <div id="walletBox">
+      <input type="text" id="wallet" placeholder="Adresse Wallet USDT">
+    </div>
+
+    <input type="text" id="clientWhatsapp" placeholder="Votre WhatsApp">
+
+    <textarea id="message" placeholder="Message (facultatif)"></textarea>
+
+    <button type="submit">Envoyer la demande</button>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
